@@ -1,9 +1,11 @@
-# 📌 Sistem Pengingat Tugas
+# 📋 Sistem Pengingat Tugas
 
-> 🎓 **College Project | Politeknik Indonusa Surakarta**
+> 🎓 **College Project | Semester 1**
+> **Politeknik Indonusa Surakarta**
 
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge\&logo=flutter\&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge\&logo=dart\&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge\&logo=kotlin\&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge\&logo=gradle\&logoColor=white)
+![Console](https://img.shields.io/badge/Application-Console-success?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
@@ -11,57 +13,91 @@
 
 # 📖 About Project
 
-**Sistem Pengingat Tugas** adalah aplikasi yang dikembangkan sebagai bagian dari proses pembelajaran pada **semester 1** Program Studi **Teknologi Rekayasa Perangkat Lunak (TRPL)** di **Politeknik Indonusa Surakarta**.
+**Sistem Pengingat Tugas** adalah aplikasi berbasis **Kotlin Console** yang dikembangkan sebagai salah satu project pada **semester pertama** Program Studi **Teknologi Rekayasa Perangkat Lunak (TRPL)** di **Politeknik Indonusa Surakarta**.
 
-Project ini dibuat untuk membantu pengguna dalam mencatat serta mengelola daftar tugas sehingga lebih mudah mengingat deadline dan aktivitas yang harus diselesaikan.
+Aplikasi ini membantu pengguna mengelola daftar tugas harian melalui antarmuka berbasis terminal, mulai dari menambahkan tugas, melihat daftar tugas, menandai tugas yang telah selesai, hingga menghapus tugas.
 
-Repository ini menjadi salah satu dokumentasi awal perjalanan saya sebagai mahasiswa dalam mempelajari pengembangan perangkat lunak.
+Repository ini menjadi bagian dari dokumentasi perjalanan akademik saya dalam mempelajari dasar-dasar pemrograman menggunakan Kotlin dan konsep Object-Oriented Programming (OOP).
 
 ---
 
 # ✨ Features
 
-Fitur utama aplikasi meliputi:
+Aplikasi menyediakan beberapa fitur utama:
 
-* 📝 Menambahkan tugas baru.
-* 📋 Menampilkan daftar tugas.
-* ✏️ Mengubah data tugas.
-* ❌ Menghapus tugas.
-* 📅 Mengelola informasi tugas.
-* 📱 Antarmuka sederhana dan mudah digunakan.
+* ➕ Menambahkan tugas baru.
+* 📋 Melihat daftar seluruh tugas.
+* ✅ Menandai tugas sebagai selesai.
+* 🗑️ Menghapus tugas.
+* 📅 Validasi format tanggal deadline (`yyyy-mm-dd`).
+* 📌 Menampilkan status tugas (Belum Selesai / Selesai).
 
-> *Fitur dapat berbeda menyesuaikan implementasi pada project.*
+---
+
+# 📱 Menu Program
+
+```text
+==================================
+
+1. Tambahkan Tugas Baru
+
+2. Lihat Daftar Tugas
+
+3. Tandai Tugas Selesai
+
+4. Hapus Tugas
+
+5. Keluar
+
+==================================
+```
 
 ---
 
 # 🛠️ Tech Stack
 
-* Flutter
-* Dart
-* Material Design
+* Kotlin
+* Gradle (Kotlin JVM)
+* IntelliJ IDEA / Android Studio
+* Console Application
 
 ---
 
 # 📂 Project Structure
 
 ```text
-lib/
-├── main.dart
-├── screens/
-├── widgets/
-├── models/
-
-android/
-ios/
-
-pubspec.yaml
-
-README.md
+Sistem-Pengingat-Tugas
+│
+├── src/
+│   └── main/
+│       └── kotlin/
+│           └── Main.kt
+│
+├── build.gradle.kts
+├── settings.gradle.kts
+└── README.md
 ```
 
 ---
 
-# ▶️ Getting Started
+# 🧠 Konsep yang Dipelajari
+
+Melalui project ini saya mempelajari:
+
+* Kotlin Fundamentals
+* Object-Oriented Programming (OOP)
+* Data Class
+* Class & Object
+* Mutable List
+* Perulangan (Loop)
+* Percabangan (`when`)
+* Function
+* Validasi Input
+* Manajemen Data Sederhana
+
+---
+
+# ▶️ Cara Menjalankan
 
 ## Clone Repository
 
@@ -71,19 +107,34 @@ git clone https://github.com/Diann13/Sistem-Pengingat-Tugas.git
 
 ---
 
-## Install Dependencies
+## Jalankan Project
+
+Menggunakan Gradle:
 
 ```bash
-flutter pub get
+gradlew run
+```
+
+atau melalui IntelliJ IDEA dengan menjalankan file:
+
+```
+Main.kt
 ```
 
 ---
 
-## Run Application
+# 📖 Cara Menggunakan
 
-```bash
-flutter run
+1. Jalankan aplikasi.
+2. Pilih menu yang tersedia.
+3. Masukkan deskripsi tugas.
+4. Masukkan tanggal deadline dengan format:
+
+```text
+yyyy-mm-dd
 ```
+
+5. Kelola daftar tugas melalui menu yang tersedia.
 
 ---
 
@@ -91,61 +142,39 @@ flutter run
 
 Project ini dibuat untuk melatih pemahaman mengenai:
 
-* Flutter Fundamentals
-* Widget
-* Layout
-* Navigation
-* Form Input
-* Stateful Widget
-* Mobile Application Development
-
----
-
-# 📚 What I Learned
-
-Melalui project ini saya belajar mengenai:
-
-* Struktur project Flutter.
-* Pengelolaan widget.
-* Pembuatan tampilan antarmuka.
-* Pengelolaan data sederhana.
-* Navigasi antar halaman.
-* Dasar pengembangan aplikasi mobile.
+* Dasar bahasa Kotlin.
+* Object-Oriented Programming.
+* Pengelolaan List.
+* Penggunaan Data Class.
+* Pembuatan aplikasi berbasis console.
+* Pengolahan input pengguna.
+* Validasi data sederhana.
 
 ---
 
 # 🚀 Future Improvements
 
-Project ini masih dapat dikembangkan dengan beberapa fitur berikut:
+Project ini masih dapat dikembangkan menjadi aplikasi yang lebih lengkap dengan fitur:
 
-* 🔔 Notifikasi pengingat tugas.
-* 📅 Kalender tugas.
-* ⭐ Prioritas tugas.
+* 💾 Penyimpanan data menggunakan SQLite.
 * 📂 Kategori tugas.
-* ☁️ Sinkronisasi cloud.
-* 💾 Penyimpanan menggunakan SQLite.
-* 🌙 Dark Mode.
+* ⭐ Prioritas tugas.
+* 🔔 Pengingat deadline.
+* 📅 Kalender tugas.
 * 🔍 Pencarian tugas.
 * 📊 Statistik penyelesaian tugas.
+* ☁️ Sinkronisasi Cloud.
+* 🖥️ GUI Desktop menggunakan JavaFX atau Compose Desktop.
 
 ---
 
 # 📈 Academic Journey
 
-Repository ini merupakan salah satu project yang saya kerjakan pada **semester pertama** di Program Studi **Teknologi Rekayasa Perangkat Lunak (TRPL)**, **Politeknik Indonusa Surakarta**.
+Repository ini merupakan salah satu project yang saya kerjakan pada **semester pertama** di Program Studi **Teknologi Rekayasa Perangkat Lunak (TRPL)**, Politeknik Indonusa Surakarta.
 
-Project ini menjadi bagian dari proses transisi saya dari pembelajaran dasar saat SMK menuju pengembangan aplikasi yang lebih kompleks di dunia perkuliahan.
+Melalui project ini saya mulai memahami bagaimana menerapkan konsep Object-Oriented Programming (OOP), pengelolaan data menggunakan collection, serta membangun aplikasi console yang interaktif menggunakan Kotlin.
 
-Seiring berjalannya waktu, saya terus mengembangkan kemampuan dalam bidang:
-
-* Flutter
-* Laravel
-* PHP
-* REST API
-* MySQL
-* Tailwind CSS
-
-Repository ini saya pertahankan sebagai dokumentasi perjalanan akademik dan perkembangan kemampuan saya sebagai Software Engineering Student.
+Project ini menjadi fondasi sebelum saya mengembangkan aplikasi yang lebih kompleks menggunakan Flutter, Laravel, REST API, dan MySQL.
 
 ---
 
@@ -163,4 +192,4 @@ GitHub : https://github.com/Diann13
 
 # ⭐ Support
 
-Apabila repository ini bermanfaat sebagai referensi atau media pembelajaran, jangan lupa berikan ⭐ pada repository ini.
+Jika repository ini bermanfaat sebagai referensi atau media pembelajaran, jangan lupa berikan ⭐ pada repository ini.
